@@ -18,9 +18,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
+
     <!-- Open Graph (FB) meta tags -->
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:title" content="Nina Carducci, photographe professionnelle à Bordeaux" />
+    <meta property="og:title" content="Nina Carducci,photographe professionnelle à Bordeaux" />
     <meta property="og:site_name" content="Nina Carducci, photographe professionnelle à Bordeaux" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux, vous propose de saisir ces merveilleux moments d'une vie au travers de son regard, son approche, sa technique." />
@@ -35,9 +36,22 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6EELY8TG4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K6EELY8TG4');
+    </script>
 </head>
 
 <body>
+
     <div class="top-header">
         <h3 class="name">Nina Carducci</h3>
         <div class="nav">
@@ -182,6 +196,8 @@
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>

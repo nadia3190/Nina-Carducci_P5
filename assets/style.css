@@ -86,12 +86,13 @@ body {
 }
 
 .picture img {
-    width: 100%;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .img-fluid {
-    max-width: 100%;
-    /* height: auto; */
+    width: 100%;
+    height: auto;
 }
 
 #about-me {
@@ -142,8 +143,14 @@ body {
 
 .img-caroussel {
     margin: auto;
-    width: 80%;
+    width: 100%;
     padding-block: 3em;
+    height: auto;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
 }
 
 .title {
@@ -155,8 +162,7 @@ body {
     justify-content: center;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .nav-link.active {
     color: #fff;
     background-color: #BEB45A;
     border-radius: 0;
@@ -308,6 +314,11 @@ form textarea {
 input[type="submit"] {
     background-color: #BEB45A;
     padding: .5em 1em
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 @media all and (max-width: 1180px) {

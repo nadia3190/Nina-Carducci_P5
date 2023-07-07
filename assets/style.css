@@ -316,7 +316,7 @@ input[type="submit"] {
 
 /*je voudrais centrer le logo du footer*/
 
-.container {
+.container_footer {
     display: flex;
     flex-direction: column;
     align-items: center;

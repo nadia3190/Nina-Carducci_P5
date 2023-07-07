@@ -259,7 +259,7 @@ html {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .form-container {
@@ -300,8 +300,8 @@ input[type="submit"] {
 }
 
 #map {
-    height: 400px;
-    width: 60%;
+    height: 45vh;
+    width: 50%;
     border-radius: 5px;
     border: 5px solid #BEB45A;
 }
@@ -309,4 +309,27 @@ input[type="submit"] {
 .meta-description {
     margin-left: 12px;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*je voudrais centrer le logo du footer*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_logo img {
+    max-width: 100%;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.footer_logo p {
+    margin: 10px 0;
 }

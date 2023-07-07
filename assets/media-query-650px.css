@@ -35,4 +35,8 @@
         width: 80%;
         height: auto;
     }
+    #map {
+        width: 100%;
+        height: 300px;
+    }
 }

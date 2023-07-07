@@ -9,11 +9,13 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nina-carducci.github.io/">
     <link rel="icon" type="image/png" href="./assets/images/nina-lossy.webp">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMGEwEORkg9aRTO75iSIRUMV7FtBmuh7k&libraries=places&callback=initMap" async defer></script>
     <!-- Open Graph data -->
     <meta property="og:title" content="Nina Carducci, Photographe professionnel">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nina-carducci.github.io/">
-    <meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.png">
+    <meta property="og:image" content="https://./assets/images/nina-lossy.webp">
     <meta property="og:description" content="Nina Carducci, photographe professionnel à Bordeaux et en Île-de-France, vous propose de participer à des shootings photos, de créer des albums photos personnalisés, ou de retoucher vos propres photos.">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
@@ -21,11 +23,11 @@
     <meta name="twitter:title" content="Nina Carducci, Photographe professionnel">
     <meta name="twitter:description" content="Nina Carducci - Photographe professionnel à Bordeaux et en Île-de-France - Shootings photos, création d'albums photos personnalisés, retouche de vos propres photos">
     <meta name="twitter:creator" content="@nina_carducci">
-    <meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.png">
+    <meta name="twitter:image" content="https://./assets/images/nina.png">
     <!-- Feuilles de style -->
     <link rel="stylesheet" media="screen" href="./assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" media="screen" href="./assets/style.css">
-    <meta name="theme-color" content="#RRGGBB">
+    <meta name="theme-color" content="#00000">
     <link rel="stylesheet" media="all and (max-width: 1000px)" href="./assets/media-query-1000px.css" />
     <link rel="stylesheet" media="all and (max-width: 650px)" href="./assets/media-query-650px.css" />
     <!-- Polices -->
@@ -38,6 +40,7 @@
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
     <link rel="manifest" href="./assets/manifest.json">
+
 
 
 
@@ -217,16 +220,41 @@
         </div>
         <div class="meta-description">
             <p><strong>Nina Carducci</strong></p>
+            <div id="map">
+
+                <script>
+                    function initMap() {
+                        var myLatLng = {
+
+                            lat: 44.842722,
+                            lng: -0.571881
+
+                        }; // Coordonnées de votre emplacement
+
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: myLatLng,
+                            zoom: 12 // Niveau de zoom initial
+                        });
+
+                        var marker = new google.maps.Marker({
+                            position: myLatLng,
+                            map: map,
+                            title: 'Votre entreprise de photographie' // Titre du marqueur
+                        });
+                    }
+                </script>
+
+            </div>
             <span>68 avenue Alsace-Lorraine, Bordeaux 33200</span>
             <p>
                 Ouvert
-                <span content="Mo,Tu,We,Th,Fr 10:00-19:00">du Lundi au Vendredi de 10h à 19h</span
-          >
-        </p>
-        <p>
-          Téléphone :
-          <span>05 56 67 78 89</span>
+                <span content="Mo,Tu,We,Th,Fr 10:00-19:00">du Lundi au Vendredi de 10h à 19h</span>
             </p>
+            <p>
+                Téléphone :
+                <span>05 56 67 78 89</span>
+            </p>
+
         </div>
     </section>
 

@@ -4,15 +4,15 @@
      "name": "Nina Carducci",
      "description": "Nina Carducci, photographe professionnelle à Bordeaux",
      "icons": [{
-         "src": "./assets/images/icons/nina.png",
+         "src": "./assets/images/nina.png",
          "sizes": "512x512",
          "type": "image/png",
          "purpose": "maskable any"
      }],
      "start_url": "/",
      "display": "standalone",
-     "theme_color": "#FFFFFF",
-     "background_color": "#FFFFFF",
+     "theme_color": "#00000",
+     "background_color": "#00000",
      "image": ".assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1921w-lossy.webp",
      "url": "https://nina-carducci.fr/",
      "telephone": "0556677889",

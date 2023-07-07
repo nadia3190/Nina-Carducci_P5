@@ -13,7 +13,7 @@
     <meta property="og:title" content="Nina Carducci, Photographe professionnel">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nina-carducci.github.io/">
-    <meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.webp">
+    <meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.png">
     <meta property="og:description" content="Nina Carducci, photographe professionnel à Bordeaux et en Île-de-France, vous propose de participer à des shootings photos, de créer des albums photos personnalisés, ou de retoucher vos propres photos.">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="Nina Carducci, Photographe professionnel">
     <meta name="twitter:description" content="Nina Carducci - Photographe professionnel à Bordeaux et en Île-de-France - Shootings photos, création d'albums photos personnalisés, retouche de vos propres photos">
     <meta name="twitter:creator" content="@nina_carducci">
-    <meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina_lossy.webp">
+    <meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.png">
     <!-- Feuilles de style -->
     <link rel="stylesheet" media="screen" href="./assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" media="screen" href="./assets/style.css">
@@ -37,11 +37,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
+    <link rel="manifest" href="./assets/manifest.json">
+
+
 
     <!-- Balise de vérification de site Google -->
     <meta name="google-site-verification" content="EhtF8SaXWywKE8xfjwbR9yYgLDFY4puPBHl26JH-qgo" />
-    <!--Page prevented back/forward cache restoration ? -->
-    <meta http-equiv="Cache-Control" content="no-store" max-age="3600" />
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6EELY8TG4"></script>
     <script>
@@ -115,7 +117,7 @@
     </section>
     <section id="about">
         <div class="picture left">
-            <img src="./assets/images/nina-lossy.webp" alt="photo de nina carudcci">
+            <img src="./assets/images/nina-lossy.webp" class="d-block w-100 h-auto" alt="photo de nina carudcci">
         </div>
         <div id="about-me">
             <h2 class="about-me__title">A propos de moi</h2>
@@ -210,8 +212,21 @@
                 </form>
             </div>
             <div class="picture right">
-                <img src="./assets/images/camera-lossy.webp" alt="Un appareil photo avec filtre sepia">
+                <img src="./assets/images/camera-lossy.webp" class="d-block w-100 h-auto" alt="Un appareil photo avec filtre sepia">
             </div>
+        </div>
+        <div class="meta-description">
+            <p><strong>Nina Carducci</strong></p>
+            <span>68 avenue Alsace-Lorraine, Bordeaux 33200</span>
+            <p>
+                Ouvert
+                <span content="Mo,Tu,We,Th,Fr 10:00-19:00">du Lundi au Vendredi de 10h à 19h</span
+          >
+        </p>
+        <p>
+          Téléphone :
+          <span>05 56 67 78 89</span>
+            </p>
         </div>
     </section>
 

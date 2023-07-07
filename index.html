@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nina-carducci.github.io/">
-    <link rel="icon" type="image/png" href="./assets/images/nina-lossy.webp">
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMGEwEORkg9aRTO75iSIRUMV7FtBmuh7k&libraries=places&callback=initMap" async defer></script>
+    <link rel="icon" type="image/png" href="assets/images/nina-lossy.webp">
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+
     <!-- Open Graph data -->
     <meta property="og:title" content="Nina Carducci, Photographe professionnel">
     <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
     <meta name="twitter:creator" content="@nina_carducci">
     <meta name="twitter:image" content="https://./assets/images/nina.png">
     <!-- Feuilles de style -->
-    <link rel="stylesheet" media="screen" href="./assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" media="screen" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" media="screen" href="./assets/style.css">
     <meta name="theme-color" content="#00000">
     <link rel="stylesheet" media="all and (max-width: 1000px)" href="./assets/media-query-1000px.css" />
@@ -39,8 +39,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
-    <link rel="manifest" href="./assets/manifest.json">
-
+    <link rel="manifest" href="./assets/manifest.json">$
+    <script src="./service-worker.js" defer></script>
 
 
 
@@ -120,7 +120,7 @@
     </section>
     <section id="about">
         <div class="picture left">
-            <img src="./assets/images/nina-lossy.webp" class="d-block w-100 h-auto" alt="photo de nina carudcci">
+            <img src="assets/images/nina-lossy.webp" class="d-block w-100 h-auto" alt="photo de nina carudcci">
         </div>
         <div id="about-me">
             <h2 class="about-me__title">A propos de moi</h2>
@@ -220,7 +220,7 @@
         </div>
         <div class="meta-description">
             <p><strong>Nina Carducci</strong></p>
-            <div id="map">
+            <div id="map" loading="lazy">
 
                 <script>
                     function initMap() {
@@ -229,7 +229,7 @@
                             lat: 44.842722,
                             lng: -0.571881
 
-                        }; // Coordonnées de votre emplacement
+                        };
 
                         var map = new google.maps.Map(document.getElementById('map'), {
                             center: myLatLng,
@@ -258,7 +258,8 @@
         </div>
     </section>
 
-
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMGEwEORkg9aRTO75iSIRUMV7FtBmuh7k&libraries=places&callback=initMap" async defer></script>
 </body>
 
 </html>

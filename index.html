@@ -25,7 +25,7 @@
     <meta name="twitter:creator" content="@nina_carducci">
     <meta name="twitter:image" content="https://./assets/images/nina.png">
     <!-- Feuilles de style -->
-    <link rel="stylesheet" media="screen" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="./assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" media="screen" href="./assets/style.css">
     <meta name="theme-color" content="#00000">
     <link rel="stylesheet" media="all and (max-width: 1000px)" href="./assets/media-query-1000px.css" />
@@ -40,7 +40,7 @@
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
     <link rel="manifest" href="./assets/manifest.json">
-    <script src="./service-worker.js" defer></script>
+
 
 
 
@@ -220,40 +220,18 @@
         </div>
         <div class="meta-description">
             <p><strong>Nina Carducci</strong></p>
-            <div id="map" loading="lazy">
 
-                <script>
-                    function initMap() {
-                        var myLatLng = {
 
-                            lat: 44.842722,
-                            lng: -0.571881
-
-                        };
-
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            center: myLatLng,
-                            zoom: 12 // Niveau de zoom initial
-                        });
-
-                        var marker = new google.maps.Marker({
-                            position: myLatLng,
-                            map: map,
-                            title: 'Votre entreprise de photographie' // Titre du marqueur
-                        });
-                    }
-                </script>
-
-            </div>
-            <span>68 avenue Alsace-Lorraine, Bordeaux 33200</span>
-            <p>
-                Ouvert
-                <span content="Mo,Tu,We,Th,Fr 10:00-19:00">du Lundi au Vendredi de 10h à 19h</span>
-            </p>
-            <p>
-                Téléphone :
-                <span>05 56 67 78 89</span>
-            </p>
+        </div>
+        <span>68 avenue Alsace-Lorraine, Bordeaux 33200</span>
+        <p>
+            Ouvert
+            <span content="Mo,Tu,We,Th,Fr 10:00-19:00">du Lundi au Vendredi de 10h à 19h</span>
+        </p>
+        <p>
+            Téléphone :
+            <span>05 56 67 78 89</span>
+        </p>
 
         </div>
     </section>
@@ -268,8 +246,7 @@
         </div>
     </footer>
 
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMGEwEORkg9aRTO75iSIRUMV7FtBmuh7k&libraries=places&callback=initMap" async defer></script>
+
 </body>
 
 </html>

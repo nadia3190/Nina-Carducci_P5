@@ -220,31 +220,7 @@
         </div>
         <div class="meta-description">
             <p><strong>Nina Carducci</strong></p>
-            <div id="map" loading="lazy">
-
-                <script>
-                    function initMap() {
-                        var myLatLng = {
-
-                            lat: 44.842722,
-                            lng: -0.571881
-
-                        };
-
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            center: myLatLng,
-                            zoom: 12 // Niveau de zoom initial
-                        });
-
-                        var marker = new google.maps.Marker({
-                            position: myLatLng,
-                            map: map,
-                            title: 'Votre entreprise de photographie' // Titre du marqueur
-                        });
-                    }
-                </script>
-
-            </div>
+           
             <span>68 avenue Alsace-Lorraine, Bordeaux 33200</span>
             <p>
                 Ouvert
@@ -269,7 +245,7 @@
     </footer>
 
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMGEwEORkg9aRTO75iSIRUMV7FtBmuh7k&libraries=places&callback=initMap" async defer></script>
+   
 </body>
 
 </html>

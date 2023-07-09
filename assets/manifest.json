@@ -1,32 +1,32 @@
 {
-     "@context": "http://schema.org",
-     "@type": ["LocalBusiness", "Service"],
-     "name": "Nina Carducci",
-     "description": "Nina Carducci, photographe professionnelle à Bordeaux",
+    "@context": "http://schema.org",
+    "@type": ["LocalBusiness", "Service"],
+    "name": "Nina Carducci",
+    "description": "Nina Carducci, photographe professionnelle à Bordeaux",
 
 
-     "image": ".assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1921w-lossy.webp",
-     "url": "https://nina-carducci.fr/",
-     "telephone": "0556677889",
-     "address": {
-         "@type": "PostalAddress",
-         "streetAddress": "68 avenue Alsace-Lorraine",
-         "addressLocality": "Bordeaux",
-         "postalCode": "33200",
-         "addressCountry": "FR"
-     },
-     "geo": {
-         "@type": "GeoCoordinates",
-         "latitude": "44.8466732",
-         "longitude": "-0.6065805"
-     },
-     "openingHoursSpecification": {
-         "@type": "OpeningHoursSpecification",
-         "dayOfWeek": ["lundi", "mardi", "mercredi", "jeudi", "vendredi"],
-         "opens": "10:00",
-         "closes": "19:00"
-     },
-     "priceRange": "50€ - 400€"
+    "image": ".assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1921w-lossy.webp",
+    "url": "https://nina-carducci.fr/",
+    "telephone": "0556677889",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue Alsace-Lorraine",
+        "addressLocality": "Bordeaux",
+        "postalCode": "33200",
+        "addressCountry": "FR"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "44.8466732",
+        "longitude": "-0.6065805"
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["lundi", "mardi", "mercredi", "jeudi", "vendredi"],
+        "opens": "10:00",
+        "closes": "19:00"
+    },
+    "priceRange": "50€ - 400€"
 
 
- }
+}

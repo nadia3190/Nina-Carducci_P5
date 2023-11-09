@@ -8,6 +8,8 @@ Nina Carducci est une photographe qui souhaite optimiser corriger les bugs de so
 
 Objectifs : optimiser d'un site Internet après audit Lighthouse et corrections de bugs
 
+https://nadia3190.github.io/Nina-Carducci_P5/
+
 Résultats :
 
 // Bugs corrigés
@@ -19,5 +21,4 @@ Résultats :
 // Site optimisé
 
 Site plus rapide à charger
-Site plus sûr
-Performance Lighthouse passées de 50 à 97.
+Performance Lighthouse passées de 42 à 97.
